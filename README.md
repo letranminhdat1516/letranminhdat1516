@@ -20,7 +20,7 @@
   </a>
   <br><br>
   <a href="https://github.com/letranminhdat1516">
-    <img align="center" src="https://streak-stats.demolab.com/?user=letranminhdat1516&hide_border=true&background=1f1f1f&stroke=1f1f1f&ring=E23E63&fire=E23E63&currStreakLabel=E23E63&sideLabels=c9d1d9&currStreakNum=ffffff&sideNums=ffffff&dates=8b949e" />
+    <img align="center" src="https://streak-stats.demolab.com/?user=letranminhdat1516&hide_border=true&disable_animations=true&background=1f1f1f&stroke=1f1f1f&ring=E23E63&fire=E23E63&currStreakLabel=E23E63&sideLabels=c9d1d9&currStreakNum=ffffff&sideNums=ffffff&dates=8b949e" />
   </a>
 </p>
 
