@@ -81,51 +81,48 @@ def build(u):
         ]
         y += 30
 
-    # A sparkline instead of a progress ring: contributions have no ceiling, so
-    # any ring reads as "x% of a target" that doesn't exist.
+    # Bars, not a ring or a line: contributions have no ceiling (so a progress
+    # ring is meaningless) and a curve's tail kept colliding with the caption.
+    # Bars stay inside their own column, so nothing can overlap.
     months = {}
     for w in c["contributionCalendar"]["weeks"]:
         for d in w["contributionDays"]:
             months[d["date"][:7]] = months.get(d["date"][:7], 0) + d["contributionCount"]
-    series = [v for _, v in sorted(months.items())[-12:]]
-    peak = max(series) or 1
+    series = sorted(months.items())[-12:]
+    peak = max(v for _, v in series) or 1
 
-    # Centre the sparkline block (plot + caption) on the rows block, and keep the
-    # right margin equal to the left one.
+    PEAK_LABEL, CAPTION = 16, 20
+    PH = 84
     rows_top, rows_bottom = 104 - 18, y - 30 + 6
-    SH, CAPTION_GAP = 92, 22
-    SY = (rows_top + rows_bottom) / 2 - (SH + CAPTION_GAP) / 2
-    SW = 240
-    SX = W - 46 - SW
+    block = PEAK_LABEL + PH + CAPTION
+    top = (rows_top + rows_bottom) / 2 - block / 2
+    base = top + PEAK_LABEL + PH
+    PW = 240
+    PX = W - 46 - PW
+    slot = PW / len(series)
+    bw = slot * 0.62
 
-    def sx(i):
-        return SX + SW * i / (len(series) - 1)
-
-    def sy(v):
-        return SY + SH * (1 - v / peak)
-
-    pts = [(sx(i), sy(v)) for i, v in enumerate(series)]
-    d = [f"M {pts[0][0]:.1f} {pts[0][1]:.1f}"]
-    for i in range(len(pts) - 1):
-        p0 = pts[i - 1] if i else pts[i]
-        p1, p2 = pts[i], pts[i + 1]
-        p3 = pts[i + 2] if i + 2 < len(pts) else p2
-        d.append("C {:.1f} {:.1f}, {:.1f} {:.1f}, {:.1f} {:.1f}".format(
-            p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6,
-            p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6, p2[0], p2[1]))
-    line = " ".join(d)
-    px, py = pts[series.index(peak)]
-
+    p.append(
+        f'<defs><linearGradient id="b" x1="0" y1="0" x2="0" y2="1">'
+        f'<stop offset="0%" stop-color="{ACCENT}"/>'
+        f'<stop offset="100%" stop-color="{ACCENT}" stop-opacity="0.28"/></linearGradient></defs>'
+    )
+    for i, (month, v) in enumerate(series):
+        h = max(2.0, PH * v / peak)
+        bx = PX + i * slot + (slot - bw) / 2
+        p.append(
+            f'<rect x="{bx:.1f}" y="{base-h:.1f}" width="{bw:.1f}" height="{h:.1f}" rx="2.5" '
+            f'fill="url(#b)"/>'
+        )
+        if v == peak:
+            p.append(
+                f'<text x="{bx + bw/2:.1f}" y="{base-h-6:.1f}" fill="{TEXT}" font-size="12" '
+                f'font-weight="700" text-anchor="middle">{v}</text>'
+            )
     p += [
-        f'<defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1">'
-        f'<stop offset="0%" stop-color="{ACCENT}" stop-opacity="0.5"/>'
-        f'<stop offset="100%" stop-color="{ACCENT}" stop-opacity="0"/></linearGradient></defs>',
-        f'<path d="{line} L {pts[-1][0]:.1f} {SY+SH} L {pts[0][0]:.1f} {SY+SH} Z" fill="url(#s)"/>',
-        f'<path d="{line}" fill="none" stroke="{ACCENT}" stroke-width="2.2" stroke-linecap="round"/>',
-        f'<circle cx="{px:.1f}" cy="{py:.1f}" r="3.5" fill="{TEXT}"/>',
-        f'<text x="{px:.1f}" y="{py-10:.1f}" fill="{TEXT}" font-size="12" font-weight="700" '
-        f'text-anchor="middle">{peak}</text>',
-        f'<text x="{SX + SW/2:.0f}" y="{SY+SH+22}" fill="{ACCENT}" font-size="9.5" '
+        f'<line x1="{PX:.1f}" y1="{base:.1f}" x2="{PX+PW:.1f}" y2="{base:.1f}" '
+        f'stroke="{ACCENT}" stroke-opacity="0.3"/>',
+        f'<text x="{PX + PW/2:.0f}" y="{base+CAPTION:.0f}" fill="{ACCENT}" font-size="9.5" '
         f'letter-spacing="1.3" text-anchor="middle">CONTRIBUTIONS PER MONTH</text>',
         "</svg>",
     ]
