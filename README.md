@@ -18,6 +18,10 @@
   <a href="mailto:datltmse@gmail.com">
     <img src="https://img.shields.io/badge/datltmse@gmail.com-AE1D41?style=for-the-badge&logo=Gmail&logoColor=E23E63&labelColor=1f1f1f&color=1f1f1f">
   </a>
+  <br><br>
+  <a href="https://github.com/letranminhdat1516">
+    <img align="center" src="https://streak-stats.demolab.com/?user=letranminhdat1516&hide_border=true&background=1f1f1f&stroke=1f1f1f&ring=E23E63&fire=E23E63&currStreakLabel=E23E63&sideLabels=c9d1d9&currStreakNum=ffffff&sideNums=ffffff&dates=8b949e" />
+  </a>
 </p>
 
 <br>
@@ -42,20 +46,16 @@ Every LLM call I ship logs tokens, cost, latency and errors. A system you can't 
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=py,ts,cs,dotnet,nodejs,nestjs,react,postgres,redis,docker,aws,githubactions,linux,git,opencv&theme=dark&perline=8" />
+    <img src="https://skillicons.dev/icons?i=py,pytorch,ts,cs,dotnet,nodejs,postgres,redis,docker,aws,githubactions,linux,git&theme=dark&perline=7" />
   </a>
 </p>
 
 - **AI** — multi-provider LLM routing & fallback, hybrid RAG (pgvector + full-text), local ONNX embeddings, guardrails, YOLO / OpenCV / RTSP
-- **Backend** — .NET 10, Node.js, NestJS, WebSocket, event-driven, PostgreSQL + pgvector, Redis
+- **Backend** — .NET 10, Node.js, WebSocket, event-driven, PostgreSQL + pgvector, Redis
 - **Ops** — AWS, Docker Compose, GitHub Actions, systemd, on-prem / VPN deploys
 
 <br>
 
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=letranminhdat1516&theme=github_dark" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=letranminhdat1516&hide_border=true&bg_color=1f1f1f&color=E23E63&line=E23E63&point=ffffff&area=true&area_color=AE1D41" width="98%" />
 </p>
