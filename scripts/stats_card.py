@@ -90,7 +90,13 @@ def build(u):
     series = [v for _, v in sorted(months.items())[-12:]]
     peak = max(series) or 1
 
-    SX, SY, SW, SH = 590, 96, 230, 84
+    # Centre the sparkline block (plot + caption) on the rows block, and keep the
+    # right margin equal to the left one.
+    rows_top, rows_bottom = 104 - 18, y - 30 + 6
+    SH, CAPTION_GAP = 92, 22
+    SY = (rows_top + rows_bottom) / 2 - (SH + CAPTION_GAP) / 2
+    SW = 240
+    SX = W - 46 - SW
 
     def sx(i):
         return SX + SW * i / (len(series) - 1)
