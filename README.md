@@ -30,15 +30,7 @@ Full-stack & AI developer. I ship production AI agents (Claude Agent SDK, RAG/pg
 
 Every LLM call I ship logs tokens, cost, latency and errors. A system you can't measure is a system you can't operate.
 
-<br>
-
-## Shipped
-
-- **RAG enrollment advisor** — on-prem, VPN-only. 19 branches, 100,000+ learners.
-- **Voice ordering agent** — LiveKit + hand-built multi-provider failover. Live in a coffee shop daily.
-- **IPBMS patient monitoring** — YOLO pose estimation on live RTSP cameras. Led 4 engineers.
-- **VAS accounting ERP** — .NET 10, 164 regulatory test cases, in production.
-- **AI trading platform** — zero to production in 20 days. Led 3 engineers.
+The mission log — what's shipped, what's still running — lives on **[portfolio.cicca.dpdns.org](https://portfolio.cicca.dpdns.org)**, kept current there rather than duplicated here.
 
 <br>
 
