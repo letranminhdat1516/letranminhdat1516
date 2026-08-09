@@ -57,5 +57,5 @@ Every LLM call I ship logs tokens, cost, latency and errors. A system you can't 
 <br>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=letranminhdat1516&hide_border=true&bg_color=1f1f1f&color=E23E63&line=E23E63&point=ffffff&area=true&area_color=AE1D41" width="98%" />
+  <img src="https://ghchart.rshah.org/E23E63/letranminhdat1516" width="98%" alt="Contributions in the last year" />
 </p>
