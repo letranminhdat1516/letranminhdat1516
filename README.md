@@ -6,7 +6,7 @@
 </p>
 
 <h1 align="center">Lê Trần Minh Đạt <img src="./assets/cat.gif" width="58"></h1>
-<p align="center"><b>AI Engineer</b> — LLMOps · DevOps · Custom AI systems · Ho Chi Minh City</p>
+<p align="center"><b>Creative Developer & AI Engineer</b> — production AI agents · real-time systems · full-stack web</p>
 
 <p align="center">
   <a href="https://portfolio.cicca.dpdns.org">
@@ -26,7 +26,7 @@
 
 <br>
 
-I build custom AI systems and keep them alive in production — on-prem RAG, real-time voice agents, computer vision on live cameras.
+Full-stack & AI developer. I ship production AI agents (Claude Agent SDK, RAG/pgvector), real-time systems, and full-stack web apps — from AI trading platforms to VAS-compliant ERP.
 
 Every LLM call I ship logs tokens, cost, latency and errors. A system you can't measure is a system you can't operate.
 
