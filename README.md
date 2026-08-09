@@ -57,5 +57,5 @@ Every LLM call I ship logs tokens, cost, latency and errors. A system you can't 
 <br>
 
 <p align="center">
-  <img src="./assets/activity.svg" width="98%" alt="Contributions in the last year" />
+  <img src="./assets/profile-card.svg" alt="Profile summary" />
 </p>
