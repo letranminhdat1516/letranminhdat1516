@@ -29,7 +29,10 @@ QUERY = """
       totalCommitContributions
       totalPullRequestContributions
       totalRepositoriesWithContributedCommits
-      contributionCalendar { totalContributions }
+      contributionCalendar {
+        totalContributions
+        weeks { contributionDays { date contributionCount } }
+      }
     } } }
 """ % USER
 
@@ -59,7 +62,6 @@ def build(u):
         ("repo", "Public Repos:", f'{u["repositories"]["totalCount"]:,}'),
     ]
 
-    circ = 2 * 3.14159265 * RING_R
     p = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
         f'font-family="{FONT}">',
@@ -79,15 +81,46 @@ def build(u):
         ]
         y += 30
 
+    # A sparkline instead of a progress ring: contributions have no ceiling, so
+    # any ring reads as "x% of a target" that doesn't exist.
+    months = {}
+    for w in c["contributionCalendar"]["weeks"]:
+        for d in w["contributionDays"]:
+            months[d["date"][:7]] = months.get(d["date"][:7], 0) + d["contributionCount"]
+    series = [v for _, v in sorted(months.items())[-12:]]
+    peak = max(series) or 1
+
+    SX, SY, SW, SH = 590, 96, 230, 84
+
+    def sx(i):
+        return SX + SW * i / (len(series) - 1)
+
+    def sy(v):
+        return SY + SH * (1 - v / peak)
+
+    pts = [(sx(i), sy(v)) for i, v in enumerate(series)]
+    d = [f"M {pts[0][0]:.1f} {pts[0][1]:.1f}"]
+    for i in range(len(pts) - 1):
+        p0 = pts[i - 1] if i else pts[i]
+        p1, p2 = pts[i], pts[i + 1]
+        p3 = pts[i + 2] if i + 2 < len(pts) else p2
+        d.append("C {:.1f} {:.1f}, {:.1f} {:.1f}, {:.1f} {:.1f}".format(
+            p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6,
+            p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6, p2[0], p2[1]))
+    line = " ".join(d)
+    px, py = pts[series.index(peak)]
+
     p += [
-        f'<circle cx="{RING_CX}" cy="{RING_CY}" r="{RING_R}" fill="none" stroke="{RING_BG}" stroke-width="9"/>',
-        f'<circle cx="{RING_CX}" cy="{RING_CY}" r="{RING_R}" fill="none" stroke="{ACCENT}" '
-        f'stroke-width="9" stroke-linecap="round" stroke-dasharray="{circ*0.88:.1f} {circ:.1f}" '
-        f'transform="rotate(-90 {RING_CX} {RING_CY})"/>',
-        f'<text x="{RING_CX}" y="{RING_CY+4}" fill="{TEXT}" font-size="30" font-weight="700" '
-        f'text-anchor="middle">{total:,}</text>',
-        f'<text x="{RING_CX}" y="{RING_CY+26}" fill="{ACCENT}" font-size="10" letter-spacing="1.4" '
-        f'text-anchor="middle">CONTRIBUTIONS</text>',
+        f'<defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1">'
+        f'<stop offset="0%" stop-color="{ACCENT}" stop-opacity="0.5"/>'
+        f'<stop offset="100%" stop-color="{ACCENT}" stop-opacity="0"/></linearGradient></defs>',
+        f'<path d="{line} L {pts[-1][0]:.1f} {SY+SH} L {pts[0][0]:.1f} {SY+SH} Z" fill="url(#s)"/>',
+        f'<path d="{line}" fill="none" stroke="{ACCENT}" stroke-width="2.2" stroke-linecap="round"/>',
+        f'<circle cx="{px:.1f}" cy="{py:.1f}" r="3.5" fill="{TEXT}"/>',
+        f'<text x="{px:.1f}" y="{py-10:.1f}" fill="{TEXT}" font-size="12" font-weight="700" '
+        f'text-anchor="middle">{peak}</text>',
+        f'<text x="{SX + SW/2:.0f}" y="{SY+SH+22}" fill="{ACCENT}" font-size="9.5" '
+        f'letter-spacing="1.3" text-anchor="middle">CONTRIBUTIONS PER MONTH</text>',
         "</svg>",
     ]
     return "\n".join(p)

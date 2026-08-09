@@ -3,10 +3,10 @@
 <text x="46" y="58" fill="#E23E63" font-size="23" font-weight="700">Lê Trần Minh Đạt&#8217;s GitHub Stats</text>
 <g transform="translate(48 90) scale(0.76)"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16zm-1 3v6l4.5 2.7.8-1.3-3.8-2.3V7h-1.5z" fill="#E23E63" fill-opacity="0.85"/></g>
 <text x="82" y="104" fill="#c9d1d9" font-size="15.5" font-weight="600">Total Commits (last year):</text>
-<text x="430" y="104" fill="#c9d1d9" font-size="15.5" font-weight="700">1,016</text>
+<text x="430" y="104" fill="#c9d1d9" font-size="15.5" font-weight="700">1,017</text>
 <g transform="translate(48 120) scale(0.76)"><path d="M3 3h2v16h16v2H3V3zm15.3 3.3 1.4 1.4-5.7 5.7-3-3-4.3 4.3-1.4-1.4 5.7-5.7 3 3 4.3-4.3z" fill="#E23E63" fill-opacity="0.85"/></g>
 <text x="82" y="134" fill="#c9d1d9" font-size="15.5" font-weight="600">Total Contributions:</text>
-<text x="430" y="134" fill="#c9d1d9" font-size="15.5" font-weight="700">1,125</text>
+<text x="430" y="134" fill="#c9d1d9" font-size="15.5" font-weight="700">1,126</text>
 <g transform="translate(48 150) scale(0.76)"><path d="M6 3a3 3 0 0 1 1 5.8v6.4a3 3 0 1 1-2 0V8.8A3 3 0 0 1 6 3zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm0 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM18 3a3 3 0 0 1 1 5.8V15a4 4 0 0 1-4 4h-2v-2h2a2 2 0 0 0 2-2V8.8A3 3 0 0 1 18 3zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" fill="#E23E63" fill-opacity="0.85"/></g>
 <text x="82" y="164" fill="#c9d1d9" font-size="15.5" font-weight="600">Total PRs:</text>
 <text x="430" y="164" fill="#c9d1d9" font-size="15.5" font-weight="700">85</text>
@@ -16,8 +16,10 @@
 <g transform="translate(48 210) scale(0.76)"><path d="M4 2h13a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6a2 2 0 0 0-2 2V2zm2 1v14.2c.3-.1.7-.2 1-.2h9V3H6z" fill="#E23E63" fill-opacity="0.85"/></g>
 <text x="82" y="224" fill="#c9d1d9" font-size="15.5" font-weight="600">Public Repos:</text>
 <text x="430" y="224" fill="#c9d1d9" font-size="15.5" font-weight="700">27</text>
-<circle cx="720" cy="132" r="62" fill="none" stroke="#3a2029" stroke-width="9"/>
-<circle cx="720" cy="132" r="62" fill="none" stroke="#E23E63" stroke-width="9" stroke-linecap="round" stroke-dasharray="342.8 389.6" transform="rotate(-90 720 132)"/>
-<text x="720" y="136" fill="#c9d1d9" font-size="30" font-weight="700" text-anchor="middle">1,125</text>
-<text x="720" y="158" fill="#E23E63" font-size="10" letter-spacing="1.4" text-anchor="middle">CONTRIBUTIONS</text>
+<defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#E23E63" stop-opacity="0.5"/><stop offset="100%" stop-color="#E23E63" stop-opacity="0"/></linearGradient></defs>
+<path d="M 590.0 177.1 C 593.5 177.0, 603.9 178.6, 610.9 176.6 C 617.9 174.5, 624.8 166.8, 631.8 164.7 C 638.8 162.7, 645.8 161.9, 652.7 164.2 C 659.7 166.5, 666.7 176.5, 673.6 178.7 C 680.6 180.8, 687.6 177.6, 694.5 177.1 C 701.5 176.6, 708.5 175.7, 715.5 175.5 C 722.4 175.3, 729.4 189.3, 736.4 176.1 C 743.3 162.8, 750.3 107.5, 757.3 96.0 C 764.2 84.5, 771.2 102.6, 778.2 107.3 C 785.2 112.0, 792.1 116.8, 799.1 124.2 C 806.1 131.5, 816.5 146.8, 820.0 151.3 L 820.0 180 L 590.0 180 Z" fill="url(#s)"/>
+<path d="M 590.0 177.1 C 593.5 177.0, 603.9 178.6, 610.9 176.6 C 617.9 174.5, 624.8 166.8, 631.8 164.7 C 638.8 162.7, 645.8 161.9, 652.7 164.2 C 659.7 166.5, 666.7 176.5, 673.6 178.7 C 680.6 180.8, 687.6 177.6, 694.5 177.1 C 701.5 176.6, 708.5 175.7, 715.5 175.5 C 722.4 175.3, 729.4 189.3, 736.4 176.1 C 743.3 162.8, 750.3 107.5, 757.3 96.0 C 764.2 84.5, 771.2 102.6, 778.2 107.3 C 785.2 112.0, 792.1 116.8, 799.1 124.2 C 806.1 131.5, 816.5 146.8, 820.0 151.3" fill="none" stroke="#E23E63" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="757.3" cy="96.0" r="3.5" fill="#c9d1d9"/>
+<text x="757.3" y="86.0" fill="#c9d1d9" font-size="12" font-weight="700" text-anchor="middle">319</text>
+<text x="705" y="202" fill="#E23E63" font-size="9.5" letter-spacing="1.3" text-anchor="middle">CONTRIBUTIONS PER MONTH</text>
 </svg>
