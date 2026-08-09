@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="150" viewBox="0 0 760 150" font-family="Segoe UI, Ubuntu, sans-serif">
+<rect width="760" height="150" fill="#1f1f1f" rx="10"/>
+<rect x="0.0" y="12" width="179.5" height="126" rx="8" fill="#242424" stroke="#E23E63" stroke-opacity="0.28"/>
+<text x="89.8" y="78" fill="#E23E63" font-size="38" font-weight="700" text-anchor="middle">1,124</text>
+<text x="89.8" y="106" fill="#8b949e" font-size="11" letter-spacing="1.4" text-anchor="middle">CONTRIBUTIONS</text>
+<rect x="193.5" y="12" width="179.5" height="126" rx="8" fill="#242424" stroke="#E23E63" stroke-opacity="0.28"/>
+<text x="283.2" y="78" fill="#E23E63" font-size="38" font-weight="700" text-anchor="middle">27</text>
+<text x="283.2" y="106" fill="#8b949e" font-size="11" letter-spacing="1.4" text-anchor="middle">PUBLIC REPOS</text>
+<rect x="387.0" y="12" width="179.5" height="126" rx="8" fill="#242424" stroke="#E23E63" stroke-opacity="0.28"/>
+<text x="476.8" y="78" fill="#E23E63" font-size="38" font-weight="700" text-anchor="middle">4+</text>
+<text x="476.8" y="106" fill="#8b949e" font-size="11" letter-spacing="1.4" text-anchor="middle">YEARS ON GITHUB</text>
+<rect x="580.5" y="12" width="179.5" height="126" rx="8" fill="#242424" stroke="#E23E63" stroke-opacity="0.28"/>
+<text x="670.2" y="78" fill="#E23E63" font-size="38" font-weight="700" text-anchor="middle">266</text>
+<text x="670.2" y="106" fill="#8b949e" font-size="11" letter-spacing="1.4" text-anchor="middle">PEAK WEEK</text>
+</svg>
