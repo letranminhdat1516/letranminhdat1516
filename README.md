@@ -58,5 +58,4 @@ Every LLM call I ship logs tokens, cost, latency and errors. A system you can't 
 
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=letranminhdat1516&theme=github_dark" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=letranminhdat1516&theme=github_dark&utcOffset=7" />
 </p>
