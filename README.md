@@ -1,12 +1,12 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/cicca-dark.png">
-    <img src="./assets/cicca-light.png" width="330" alt="CICCA">
+    <img src="./assets/cicca-light.png" width="300" alt="CICCA">
   </picture>
 </p>
 
-<h1 align="center">Lê Trần Minh Đạt</h1>
-<p align="center"><b>AI Engineer</b> — LLMOps · DevOps · Custom AI systems</p>
+<h1 align="center">Lê Trần Minh Đạt <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="46"></h1>
+<p align="center"><b>AI Engineer</b> — LLMOps · DevOps · Custom AI systems · Ho Chi Minh City</p>
 
 <p align="center">
   <a href="https://portfolio.cicca.dpdns.org">
@@ -18,38 +18,27 @@
   <a href="mailto:datltmse@gmail.com">
     <img src="https://img.shields.io/badge/datltmse@gmail.com-AE1D41?style=for-the-badge&logo=Gmail&logoColor=E23E63&labelColor=1f1f1f&color=1f1f1f">
   </a>
-  <a href="https://github.com/letranminhdat1516">
-    <img src="https://img.shields.io/badge/letranminhdat1516-AE1D41?style=for-the-badge&logo=Github&logoColor=E23E63&labelColor=1f1f1f&color=1f1f1f">
-  </a>
-  <br><br>
-  <a href="https://github.com/letranminhdat1516">
-    <img align="center" src="https://streak-stats.demolab.com/?user=letranminhdat1516&hide_border=true&background=1f1f1f&stroke=1f1f1f&ring=E23E63&fire=E23E63&currStreakLabel=E23E63&sideLabels=c9d1d9&currStreakNum=ffffff&sideNums=ffffff&dates=8b949e" />
-  </a>
 </p>
 
 <br>
 
-I'm an AI engineer working in **LLMOps** — I build custom AI systems and then keep them running in production, which is the part most demos skip.
+I build custom AI systems and keep them alive in production — on-prem RAG, real-time voice agents, computer vision on live cameras.
 
-In the past year I shipped an on-prem RAG enrollment advisor for a 19-branch academy reaching **100,000+ learners**, running under systemd and Docker Compose entirely inside the client's VPN; a self-hosted voice agent on LiveKit that a coffee shop takes real orders through every day; a patient-monitoring vision system live on production RTSP cameras; an AI trading platform on AWS built by a 3-engineer team in **20 days**; and a VAS-compliant .NET 10 accounting ERP shipped to EC2 through GitHub Actions ahead of its regulatory deadline.
-
-Every one of them logs each LLM call — tokens, cost, latency, errors — because a system you can't measure is a system you can't operate. The same instinct shows up everywhere else in my work: multi-provider failover written by hand because one outage meant lost orders, a 5-frame temporal validation strategy because false alarms erode trust faster than missed ones, and local ONNX embeddings on CPU because zero API cost beats a cheap API.
-
-Outside of work I play games, self-host more than I probably should, and enjoy talking shop with people who build things.
+Every LLM call I ship logs tokens, cost, latency and errors. A system you can't measure is a system you can't operate.
 
 <br>
 
-## What I've shipped
+## Shipped
 
-- **RAG enrollment advisor** — hybrid retrieval (bge-m3 ONNX embeddings on CPU + Vietnamese full-text over pgvector), anti-hallucination guardrails, human-in-the-loop advisor cockpit, full per-call cost telemetry. On-prem, VPN-only.
-- **Voice ordering agent** — real-time LiveKit agent with hand-built multi-provider LLM failover and a self-learning RAG loop; rolled out text → voice → real-time voice, self-hosted and still operated by me.
-- **IPBMS patient monitoring** — led 4 engineers; YOLO pose estimation on live RTSP streams, event-driven Normal/Warning/Danger alerts over WebSocket, LLM-generated incident reports for care staff.
-- **VAS-compliant ERP** — .NET 10 + PostgreSQL accounting platform audited against 164 regulatory test cases I authored, live with a company using it daily.
-- **AI trading platform** — led 3 engineers zero-to-production in 20 days; built the trading engine and in-app assistant, set the architecture and delivery plan.
+- **RAG enrollment advisor** — on-prem, VPN-only. 19 branches, 100,000+ learners.
+- **Voice ordering agent** — LiveKit + hand-built multi-provider failover. Live in a coffee shop daily.
+- **IPBMS patient monitoring** — YOLO pose estimation on live RTSP cameras. Led 4 engineers.
+- **VAS accounting ERP** — .NET 10, 164 regulatory test cases, in production.
+- **AI trading platform** — zero to production in 20 days. Led 3 engineers.
 
 <br>
 
-## What I work with
+## Stack
 
 <p align="center">
   <a href="https://skillicons.dev">
@@ -57,16 +46,16 @@ Outside of work I play games, self-host more than I probably should, and enjoy t
   </a>
 </p>
 
-- **LLM / AI infra** — multi-provider LLM routing & fallback, hybrid RAG (pgvector + full-text), local ONNX embeddings (bge-m3), anti-hallucination guardrails, human-in-the-loop workflows, YOLO pose estimation, OpenCV, RTSP streaming
-- **Backend** — .NET 10, Node.js 20, NestJS, REST API design, WebSocket, async streaming, event-driven architecture
-- **Data** — PostgreSQL 16, pgvector, Redis 7, Supabase, RustFS (S3-compatible)
-- **Cloud & LLMOps** — AWS (EC2, Bedrock, S3, IAM), Azure OpenAI, Docker Compose, GitHub Actions CI/CD, systemd, Linux provisioning, on-prem / VPN deployment
-- **Practices** — SRS authoring, regulatory test-case design, compliance engineering, per-call LLM cost/latency/error instrumentation
+- **AI** — multi-provider LLM routing & fallback, hybrid RAG (pgvector + full-text), local ONNX embeddings, guardrails, YOLO / OpenCV / RTSP
+- **Backend** — .NET 10, Node.js, NestJS, WebSocket, event-driven, PostgreSQL + pgvector, Redis
+- **Ops** — AWS, Docker Compose, GitHub Actions, systemd, on-prem / VPN deploys
 
 <br>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=letranminhdat1516&hide_border=true&bg_color=1f1f1f&color=E23E63&line=E23E63&point=ffffff&area=true&area_color=AE1D41" width="98%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=letranminhdat1516&theme=github_dark" />
 </p>
 
-<p align="center"><sub>B.Eng. Software Engineering · FPT University HCMC · GPA 3.47/4.0</sub></p>
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=letranminhdat1516&hide_border=true&bg_color=1f1f1f&color=E23E63&line=E23E63&point=ffffff&area=true&area_color=AE1D41" width="98%" />
+</p>
