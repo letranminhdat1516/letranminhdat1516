@@ -1,0 +1,35 @@
+name: Refresh profile cards
+
+on:
+  schedule:
+    # 03:17 UTC daily — off the hour so we don't queue with everyone else.
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Regenerate SVG cards
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 scripts/profile_card.py > assets/profile-card.svg
+          python3 scripts/activity_graph.py > assets/activity.svg
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/profile-card.svg assets/activity.svg
+          if git diff --staged --quiet; then
+            echo "No change."
+          else
+            git commit -m "chore: refresh profile cards"
+            git push
+          fi
