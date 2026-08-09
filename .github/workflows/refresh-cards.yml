@@ -21,12 +21,13 @@ jobs:
         run: |
           python3 scripts/profile_card.py > assets/profile-card.svg
           python3 scripts/activity_graph.py > assets/activity.svg
+          python3 scripts/stats_card.py > assets/stats-card.svg
 
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/profile-card.svg assets/activity.svg
+          git add assets/profile-card.svg assets/activity.svg assets/stats-card.svg
           if git diff --staged --quiet; then
             echo "No change."
           else
