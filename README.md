@@ -5,7 +5,7 @@
   </picture>
 </p>
 
-<h1 align="center">Lê Trần Minh Đạt <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="46"></h1>
+<h1 align="center">Lê Trần Minh Đạt <img src="./assets/cat.gif" width="58"></h1>
 <p align="center"><b>AI Engineer</b> — LLMOps · DevOps · Custom AI systems · Ho Chi Minh City</p>
 
 <p align="center">
