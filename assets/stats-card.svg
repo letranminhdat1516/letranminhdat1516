@@ -3,16 +3,16 @@
 <text x="46" y="58" fill="#E23E63" font-size="23" font-weight="700">Lê Trần Minh Đạt&#8217;s GitHub Stats</text>
 <g transform="translate(48 90) scale(0.76)"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16zm-1 3v6l4.5 2.7.8-1.3-3.8-2.3V7h-1.5z" fill="#E23E63" fill-opacity="0.85"/></g>
 <text x="82" y="104" fill="#c9d1d9" font-size="15.5" font-weight="600">Total Commits (last year):</text>
-<text x="430" y="104" fill="#c9d1d9" font-size="15.5" font-weight="700">1,029</text>
+<text x="430" y="104" fill="#c9d1d9" font-size="15.5" font-weight="700">207</text>
 <g transform="translate(48 120) scale(0.76)"><path d="M3 3h2v16h16v2H3V3zm15.3 3.3 1.4 1.4-5.7 5.7-3-3-4.3 4.3-1.4-1.4 5.7-5.7 3 3 4.3-4.3z" fill="#E23E63" fill-opacity="0.85"/></g>
 <text x="82" y="134" fill="#c9d1d9" font-size="15.5" font-weight="600">Total Contributions:</text>
-<text x="430" y="134" fill="#c9d1d9" font-size="15.5" font-weight="700">1,138</text>
+<text x="430" y="134" fill="#c9d1d9" font-size="15.5" font-weight="700">1,182</text>
 <g transform="translate(48 150) scale(0.76)"><path d="M6 3a3 3 0 0 1 1 5.8v6.4a3 3 0 1 1-2 0V8.8A3 3 0 0 1 6 3zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm0 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM18 3a3 3 0 0 1 1 5.8V15a4 4 0 0 1-4 4h-2v-2h2a2 2 0 0 0 2-2V8.8A3 3 0 0 1 18 3zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" fill="#E23E63" fill-opacity="0.85"/></g>
 <text x="82" y="164" fill="#c9d1d9" font-size="15.5" font-weight="600">Total PRs:</text>
-<text x="430" y="164" fill="#c9d1d9" font-size="15.5" font-weight="700">85</text>
+<text x="430" y="164" fill="#c9d1d9" font-size="15.5" font-weight="700">3</text>
 <g transform="translate(48 180) scale(0.76)"><path d="M12 2a3 3 0 0 1 1 5.8V10h4a3 3 0 0 1 3 3v1.2a3 3 0 1 1-2 0V13a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v1.2a3 3 0 1 1-2 0V13a3 3 0 0 1 3-3h4V7.8A3 3 0 0 1 12 2z" fill="#E23E63" fill-opacity="0.85"/></g>
 <text x="82" y="194" fill="#c9d1d9" font-size="15.5" font-weight="600">Contributed to (last year):</text>
-<text x="430" y="194" fill="#c9d1d9" font-size="15.5" font-weight="700">54</text>
+<text x="430" y="194" fill="#c9d1d9" font-size="15.5" font-weight="700">11</text>
 <g transform="translate(48 210) scale(0.76)"><path d="M4 2h13a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6a2 2 0 0 0-2 2V2zm2 1v14.2c.3-.1.7-.2 1-.2h9V3H6z" fill="#E23E63" fill-opacity="0.85"/></g>
 <text x="82" y="224" fill="#c9d1d9" font-size="15.5" font-weight="600">Public Repos:</text>
 <text x="430" y="224" fill="#c9d1d9" font-size="15.5" font-weight="700">27</text>
@@ -29,7 +29,7 @@
 <text x="744.0" y="108.0" fill="#c9d1d9" font-size="12" font-weight="700" text-anchor="middle">319</text>
 <rect x="757.8" y="125.3" width="12.4" height="72.7" rx="2.5" fill="url(#b)"/>
 <rect x="777.8" y="142.2" width="12.4" height="55.8" rx="2.5" fill="url(#b)"/>
-<rect x="797.8" y="166.1" width="12.4" height="31.9" rx="2.5" fill="url(#b)"/>
+<rect x="797.8" y="154.6" width="12.4" height="43.4" rx="2.5" fill="url(#b)"/>
 <line x1="574.0" y1="198.0" x2="814.0" y2="198.0" stroke="#E23E63" stroke-opacity="0.3"/>
 <text x="694" y="218" fill="#E23E63" font-size="9.5" letter-spacing="1.3" text-anchor="middle">CONTRIBUTIONS PER MONTH</text>
 </svg>
