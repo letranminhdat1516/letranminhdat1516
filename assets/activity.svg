@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" font-family="Segoe UI, Ubuntu, sans-serif">
 <rect width="1000" height="300" rx="10" fill="#1f1f1f"/>
-<text x="500" y="32" fill="#E23E63" font-size="18" font-weight="600" text-anchor="middle">1,304 contributions in the last year</text>
+<text x="500" y="32" fill="#E23E63" font-size="18" font-weight="600" text-anchor="middle">1,288 contributions in the last year</text>
 <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#AE1D41" stop-opacity="0.55"/><stop offset="100%" stop-color="#AE1D41" stop-opacity="0.02"/></linearGradient></defs>
 <line x1="62" y1="254.0" x2="976" y2="254.0" stroke="#E23E63" stroke-opacity="0.13" stroke-dasharray="3 4"/>
 <text x="52" y="258.0" fill="#8b949e" font-size="11" text-anchor="end">0</text>
