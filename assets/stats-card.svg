@@ -6,7 +6,7 @@
 <text x="430" y="104" fill="#c9d1d9" font-size="15.5" font-weight="700">199</text>
 <g transform="translate(48 120) scale(0.76)"><path d="M3 3h2v16h16v2H3V3zm15.3 3.3 1.4 1.4-5.7 5.7-3-3-4.3 4.3-1.4-1.4 5.7-5.7 3 3 4.3-4.3z" fill="#E23E63" fill-opacity="0.85"/></g>
 <text x="82" y="134" fill="#c9d1d9" font-size="15.5" font-weight="600">Total Contributions:</text>
-<text x="430" y="134" fill="#c9d1d9" font-size="15.5" font-weight="700">1,288</text>
+<text x="430" y="134" fill="#c9d1d9" font-size="15.5" font-weight="700">1,289</text>
 <g transform="translate(48 150) scale(0.76)"><path d="M6 3a3 3 0 0 1 1 5.8v6.4a3 3 0 1 1-2 0V8.8A3 3 0 0 1 6 3zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm0 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM18 3a3 3 0 0 1 1 5.8V15a4 4 0 0 1-4 4h-2v-2h2a2 2 0 0 0 2-2V8.8A3 3 0 0 1 18 3zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" fill="#E23E63" fill-opacity="0.85"/></g>
 <text x="82" y="164" fill="#c9d1d9" font-size="15.5" font-weight="600">Total PRs:</text>
 <text x="430" y="164" fill="#c9d1d9" font-size="15.5" font-weight="700">3</text>
@@ -29,7 +29,7 @@
 <text x="744.0" y="108.0" fill="#c9d1d9" font-size="12" font-weight="700" text-anchor="middle">319</text>
 <rect x="757.8" y="125.3" width="12.4" height="72.7" rx="2.5" fill="url(#b)"/>
 <rect x="777.8" y="142.2" width="12.4" height="55.8" rx="2.5" fill="url(#b)"/>
-<rect x="797.8" y="122.4" width="12.4" height="75.6" rx="2.5" fill="url(#b)"/>
+<rect x="797.8" y="122.2" width="12.4" height="75.8" rx="2.5" fill="url(#b)"/>
 <line x1="574.0" y1="198.0" x2="814.0" y2="198.0" stroke="#E23E63" stroke-opacity="0.3"/>
 <text x="694" y="218" fill="#E23E63" font-size="9.5" letter-spacing="1.3" text-anchor="middle">CONTRIBUTIONS PER MONTH</text>
 </svg>
