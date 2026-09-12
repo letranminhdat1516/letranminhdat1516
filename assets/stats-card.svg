@@ -6,7 +6,7 @@
 <text x="430" y="104" fill="#c9d1d9" font-size="15.5" font-weight="700">187</text>
 <g transform="translate(48 120) scale(0.76)"><path d="M3 3h2v16h16v2H3V3zm15.3 3.3 1.4 1.4-5.7 5.7-3-3-4.3 4.3-1.4-1.4 5.7-5.7 3 3 4.3-4.3z" fill="#E23E63" fill-opacity="0.85"/></g>
 <text x="82" y="134" fill="#c9d1d9" font-size="15.5" font-weight="600">Total Contributions:</text>
-<text x="430" y="134" fill="#c9d1d9" font-size="15.5" font-weight="700">1,797</text>
+<text x="430" y="134" fill="#c9d1d9" font-size="15.5" font-weight="700">1,822</text>
 <g transform="translate(48 150) scale(0.76)"><path d="M6 3a3 3 0 0 1 1 5.8v6.4a3 3 0 1 1-2 0V8.8A3 3 0 0 1 6 3zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm0 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM18 3a3 3 0 0 1 1 5.8V15a4 4 0 0 1-4 4h-2v-2h2a2 2 0 0 0 2-2V8.8A3 3 0 0 1 18 3zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" fill="#E23E63" fill-opacity="0.85"/></g>
 <text x="82" y="164" fill="#c9d1d9" font-size="15.5" font-weight="600">Total PRs:</text>
 <text x="430" y="164" fill="#c9d1d9" font-size="15.5" font-weight="700">3</text>
@@ -18,18 +18,18 @@
 <text x="430" y="224" fill="#c9d1d9" font-size="15.5" font-weight="700">27</text>
 <defs><linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#E23E63"/><stop offset="100%" stop-color="#E23E63" stop-opacity="0.28"/></linearGradient></defs>
 <rect x="577.8" y="196.0" width="12.4" height="2.0" rx="2.5" fill="url(#b)"/>
-<rect x="597.8" y="189.6" width="12.4" height="8.4" rx="2.5" fill="url(#b)"/>
-<rect x="617.8" y="189.3" width="12.4" height="8.7" rx="2.5" fill="url(#b)"/>
+<rect x="597.8" y="189.8" width="12.4" height="8.2" rx="2.5" fill="url(#b)"/>
+<rect x="617.8" y="189.5" width="12.4" height="8.5" rx="2.5" fill="url(#b)"/>
 <rect x="637.8" y="196.0" width="12.4" height="2.0" rx="2.5" fill="url(#b)"/>
 <rect x="657.8" y="196.0" width="12.4" height="2.0" rx="2.5" fill="url(#b)"/>
-<rect x="677.8" y="195.5" width="12.4" height="2.5" rx="2.5" fill="url(#b)"/>
-<rect x="697.8" y="195.8" width="12.4" height="2.2" rx="2.5" fill="url(#b)"/>
-<rect x="717.8" y="151.7" width="12.4" height="46.3" rx="2.5" fill="url(#b)"/>
-<rect x="737.8" y="158.0" width="12.4" height="40.0" rx="2.5" fill="url(#b)"/>
-<rect x="757.8" y="167.2" width="12.4" height="30.8" rx="2.5" fill="url(#b)"/>
+<rect x="677.8" y="195.6" width="12.4" height="2.4" rx="2.5" fill="url(#b)"/>
+<rect x="697.8" y="195.9" width="12.4" height="2.1" rx="2.5" fill="url(#b)"/>
+<rect x="717.8" y="152.7" width="12.4" height="45.3" rx="2.5" fill="url(#b)"/>
+<rect x="737.8" y="158.8" width="12.4" height="39.2" rx="2.5" fill="url(#b)"/>
+<rect x="757.8" y="167.9" width="12.4" height="30.1" rx="2.5" fill="url(#b)"/>
 <rect x="777.8" y="114.0" width="12.4" height="84.0" rx="2.5" fill="url(#b)"/>
-<text x="784.0" y="108.0" fill="#c9d1d9" font-size="12" font-weight="700" text-anchor="middle">579</text>
-<rect x="797.8" y="164.8" width="12.4" height="33.2" rx="2.5" fill="url(#b)"/>
+<text x="784.0" y="108.0" fill="#c9d1d9" font-size="12" font-weight="700" text-anchor="middle">591</text>
+<rect x="797.8" y="163.6" width="12.4" height="34.4" rx="2.5" fill="url(#b)"/>
 <line x1="574.0" y1="198.0" x2="814.0" y2="198.0" stroke="#E23E63" stroke-opacity="0.3"/>
 <text x="694" y="218" fill="#E23E63" font-size="9.5" letter-spacing="1.3" text-anchor="middle">CONTRIBUTIONS PER MONTH</text>
 </svg>
